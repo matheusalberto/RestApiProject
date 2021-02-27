@@ -2,6 +2,8 @@
 using RestApiProject.Domain.Entities;
 using System;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace RestApiProject.Infrastructure.Data
 {
@@ -14,7 +16,7 @@ namespace RestApiProject.Infrastructure.Data
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
 
-        public override int SaveChanges()
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             var entradas = ChangeTracker
                 .Entries()
@@ -33,7 +35,7 @@ namespace RestApiProject.Infrastructure.Data
                 }
             }
 
-            return base.SaveChanges();
+            return base.SaveChangesAsync(cancellationToken);
         }
     }
 }
