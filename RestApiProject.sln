@@ -11,17 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{B46C74AC-F171-496D-A487-8BDA7D80B7CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiProject.API", "API\RestApiProject.API.csproj", "{0876D082-9CB0-4822-8E18-50D03A0DD6D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApiProject.API", "API\RestApiProject.API.csproj", "{0876D082-9CB0-4822-8E18-50D03A0DD6D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiProject.Application", "Application\RestApiProject.Application.csproj", "{1767E70B-7D6C-43B5-851B-4D87AF7A27E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApiProject.Application", "Application\RestApiProject.Application.csproj", "{1767E70B-7D6C-43B5-851B-4D87AF7A27E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiProject.Domain", "RestApiProject.Domain\RestApiProject.Domain.csproj", "{170F75D6-69A5-49A2-9860-0B1453F33448}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApiProject.Domain", "RestApiProject.Domain\RestApiProject.Domain.csproj", "{170F75D6-69A5-49A2-9860-0B1453F33448}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiProject.Domain.Core", "RestApiProject.Domain.Core\RestApiProject.Domain.Core.csproj", "{70ADB572-194C-4266-84FB-6581665DEF0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApiProject.Domain.Core", "RestApiProject.Domain.Core\RestApiProject.Domain.Core.csproj", "{70ADB572-194C-4266-84FB-6581665DEF0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiProject.Domain.Services", "RestApiProject.Domain.Services\RestApiProject.Domain.Services.csproj", "{1B81200E-7EDA-4249-96FE-6929C36D4B3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApiProject.Domain.Services", "RestApiProject.Domain.Services\RestApiProject.Domain.Services.csproj", "{1B81200E-7EDA-4249-96FE-6929C36D4B3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiProject.Infrastructure", "RestApiProject.Infrastructure\RestApiProject.Infrastructure.csproj", "{019CB3AF-97D6-4128-A80D-F7735DAA49F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApiProject.Infrastructure", "RestApiProject.Infrastructure\RestApiProject.Infrastructure.csproj", "{019CB3AF-97D6-4128-A80D-F7735DAA49F3}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D6B97A29-9E68-4075-860B-0CD1FDC3F39C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{019CB3AF-97D6-4128-A80D-F7735DAA49F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{019CB3AF-97D6-4128-A80D-F7735DAA49F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{019CB3AF-97D6-4128-A80D-F7735DAA49F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6B97A29-9E68-4075-860B-0CD1FDC3F39C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6B97A29-9E68-4075-860B-0CD1FDC3F39C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6B97A29-9E68-4075-860B-0CD1FDC3F39C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6B97A29-9E68-4075-860B-0CD1FDC3F39C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

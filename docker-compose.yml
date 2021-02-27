@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  restapiproject.api:
+    container_name: restapiproject-api
+    image: restapiprojectapi
+    environment:
+      - "ConnectionStrings__DefaultConnection=Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=RestApiProject;Data Source=database;User ID=sa;Password=123ABC;"
+    depends_on:
+      - database
+  database:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    container_name: restapiproject-database
+    environment:
+      SA_PASSWORD: "123ABC"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - restapiproject-database-volume:/var/opt/mssql
+volumes:
+    restapiproject-database-volume:
+
