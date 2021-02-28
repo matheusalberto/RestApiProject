@@ -9,4 +9,8 @@ services:
       - "80"
       - "443"
     volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+  database:
+    ports: 
+      - "1435:1433"

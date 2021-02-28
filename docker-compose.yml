@@ -3,16 +3,19 @@ version: '3.4'
 services:
   restapiproject.api:
     container_name: restapiproject-api
-    image: restapiprojectapi
+    image: ${DOCKER_REGISTRY-}restapiprojectapi
+    build:
+      context: .
+      dockerfile: API/Dockerfile
     environment:
-      - "ConnectionStrings__DefaultConnection=Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=RestApiProject;Data Source=database;User ID=sa;Password=123ABC;"
+      - "ConnectionStrings__DefaultConnection=Persist Security Info=False;Initial Catalog=RestApiProject;Data Source=database;User ID=sa;Password=12345ABCDE!;"
     depends_on:
       - database
   database:
     image: mcr.microsoft.com/mssql/server:2017-latest
     container_name: restapiproject-database
     environment:
-      SA_PASSWORD: "123ABC"
+      SA_PASSWORD: "12345ABCDE!"
       ACCEPT_EULA: "Y"
     volumes:
       - restapiproject-database-volume:/var/opt/mssql

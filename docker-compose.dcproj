@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>d6b97a29-9e68-4075-860b-0cd1fdc3f39c</ProjectGuid>
+    <ProjectGuid>a7d01847-7468-4920-8638-6ccdbb6d3073</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>restapiproject.api</DockerServiceName>
